@@ -19,6 +19,13 @@
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
     <link rel="stylesheet" href="./css/hugo-academic.css">
+    <style>
+      .pub-list li { margin-bottom: 1em; }
+      .pub-authors { font-size: 85%; }
+      .pub-title { font-weight: bold; }
+      .pub-venue { font-style: italic; }
+      .pub-award { color: #c0392b; font-weight: bold; font-size: 85%; }
+    </style>
 
 
     <script>
@@ -88,6 +95,12 @@
             </li>
 
             <li class="nav-item">
+              <a href="./cv/">
+                <span>CV</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
               <a href="./#contact" data-target="#contact">
                 <span>Contact</span>
               </a>
@@ -151,13 +164,14 @@
           </div>
           <div class="col-xs-10 col-md-9" itemprop="description">
             <h1 id="biography">Biography</h1>
-            <p>I am a researcher in the School of Engineering at Tokyo Institute of Technology and a member of Hara laboratory. My research interests are in the broad aspects of computer systems, focusing on high performance, energy efficiency, and reliability of general-purpose computer architectures, domain-specific accelerators, and highly reconfigurable architectures. Recently, I became interested in machine learning for electronic design automation (EDA) optimization.
+            <p>
+            I am a researcher at the Artificial Intelligence (AI) Lab of Fujitsu Limited in Toronto, Canada, where I work on hardware accelerators for large language model (LLM) inference. My research interests span the broad aspects of computer architecture, focusing on high performance, energy efficiency, and reliability of domain-specific accelerators, reconfigurable architectures (FPGA and CGRA), and general-purpose processors. I am also interested in machine learning for compiler and EDA optimization.
             </p>
             <p>
-            Before joining TokyoTech, I spent several years in industries (Fujitsu laboratories ltd, Preferred Networks, Inc., and Edgecortix, Inc.), where I was involved in designing and developing machine learning and neuromorphic accelerators. 
+            Over the past decade, I have worked across industry and academia in Japan and Canada. Before joining Fujitsu, I was a Senior CPU Design Engineer at Huawei Technologies Canada. Earlier, I was a researcher at Tokyo Institute of Technology, a Senior Researcher at EdgeCortix, a Researcher at Preferred Networks, where I contributed to the MN-Core deep learning accelerator, and a Researcher at Fujitsu Laboratories.
             </p>
             <p>
-            My Resume/CV
+            <a href="./cv/"><i class="fa fa-file-text-o"></i> My Resume/CV</a>
             </p>
 
             <div class="row">
@@ -208,7 +222,7 @@
           <div class="col-xs-10 col-md-3 section-heading">
             <h1>Recent Publications</h1>
             <p class="view-all">
-            <a href="/publication/">
+            <a href="./publication/">
               More Publications
               <i class="fa fa-angle-double-right"></i>
             </a>
@@ -220,167 +234,41 @@
               <div class="row">
                 <div class="col-md-12">
 
-                  <ul class="fa-ul">
-                    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-                      <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+                  <ul class="fa-ul pub-list">
 
-                      <span style="font-size:85%" class="pub-authors">
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name"><u>T. Ahmed</u></span>
-                        </span>, 
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">J. M. K&#252;hn</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">K. Namura</span>
-                        </span>
-                      </span>
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+                <span class="pub-authors">A. Sondhi, A. Xu, R. Pereira, G. Norman, A. Nguyen, <u>T. Ahmed</u>, and J. Anderson</span><br>
+                <span class="pub-title" itemprop="name">Comparative FPGA Hardware Design of Kolmogorov&ndash;Arnold Networks: B-Spline vs. Chebyshev vs. Fourier Models</span>,
+                <span class="pub-venue" itemprop="isPartOf">International Conference on Field Programmable Technology (FPT)</span>, Honolulu, HI.
+                <time itemprop="datePublished" datetime="2026-12">December, 2026</time>
+                <span class="pub-award">(Best Paper Candidate)</span>
+              </li>
 
-                      <br>
-                      <span style="font-weight:bold" style="font-size:85%" itemprop="name">A Highly Efficient Layout-Aware FPGA Overlay Accelerator Mapping Method</span>,
-                      <span style="font-style:italic" style="font-size:85%" itemprop="isPartOf">IEEE 14th International Symposium on Embedded Multicore/Many-core System-on-Chip (MCSoC)</span>.
-                      <time datetime = "2021-12-0" itemprop="datePublished">
-                        December, 2021
-                      </time>
-                    </li>
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+                <span class="pub-authors">Z. Liu, X. Wang, A. Nguyen, <u>T. Ahmed</u>, Y. Tamiya, T. Yoshikawa, and J. Anderson</span><br>
+                <span class="pub-title" itemprop="name">PE-FUSION: Multi-Function Efficient Reconfigurable Processing Elements for CGRAs</span>,
+                <span class="pub-venue" itemprop="isPartOf">39th IEEE International System-on-Chip Conference (SOCC)</span>, Heidelberg, Germany.
+                <time itemprop="datePublished" datetime="2026-09">September, 2026</time>
+              </li>
 
-                    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-                      <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
-                      <span style="font-size:85%" class="pub-authors">
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">K. Namura</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">J. M. K&#252;hn</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">T. Adachi</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">H. Imachi</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">H. Kaneko</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">T. Kato</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">G. Watanabe</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">N. Tanaka</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">S. Kashihara</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">H. Miyashita</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">Y. Tomonaga</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">R. Okuta</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">T. Akiba</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">B. Vogel</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">S. Kitajo</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">F. Osawa</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">K. Takahashi</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">Y. Takatsukasa</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">K. Mizumaru</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">T. Yamauchi</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">J. Ono</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">A. Takahashi</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name"><u>T. Ahmed</u></span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">Y. Doi</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">K. Hiraki</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">J. Makino</span>
-                        </span>
-                      </span>
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+                <span class="pub-authors">J. Ha, K. Ganeshan, A. Nguyen, <u>T. Ahmed</u>, and A. Moshovos</span><br>
+                <span class="pub-title" itemprop="name">Characterizing Self-Speculative Decoding Approaches for Accelerating LLMs</span>,
+                <span class="pub-venue" itemprop="isPartOf">Resource-Adaptive Foundation Model Inference (AdaptFM), Co-located with ICML</span>, pp. 1&ndash;27, Seoul, South Korea.
+                <time itemprop="datePublished" datetime="2026-07">July, 2026</time>
+              </li>
 
-                      <br>
-                      <span style="font-weight:bold" itemprop="name">MN-Core - A Highly Efficient and Scalable Approach to Deep Learning</span>
-                      <span style="font-style:italic" itemprop="isPartOf">2021 Symposia on VLSI Technology and Circuits (VLSI)</span>.
-                      <time datetime = "2021-6-0" itemprop="datePublished">
-                        June, 2021
-                      </time>
-                    </li>
-
-                    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-                      <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
-
-                      <span style="font-size:85%" class="pub-authors">
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">R. Zhao</span>
-                        </span>, 
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">B. Vogel</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name"><u>T. Ahmed</u></span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">W. Luk</span>
-                        </span>
-                      </span>
-
-                      <br>
-                      <span style="font-weight:bold" itemprop="name">Reducing underflow in mixed precision training by gradient scaling</span>,
-                      <span style="font-style:italic" itemprop="isPartOf">29th International Conference on International Joint Conferences on Artificial Intelligence (IJCI)</span>.
-                      <time datetime = "2021-01-0" itemprop="datePublished">
-                        January, 2021
-                      </time>
-                    </li>
-
-
-                    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-                      <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
-
-                      <span style="font-size:85%" class="pub-authors">
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name"><u>T. Ahmed</u></span>
-                        </span>, 
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">J. M. K&#252;hn</span>
-                        </span>,
-                      </span>
-
-                      <br>
-                      <span style="font-weight:bold" itemprop="name">Accuracy-Aware Memory Allocation to Mitigate BRAM Errors for Voltage Underscaling on FPGA Overlay Accelerators</span>,
-                      <span style="font-style:italic" itemprop="isPartOf">2020 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA)</span>.
-                      <time datetime = "2020-2-23" itemprop="datePublished">
-                        February, 2020
-                      </time>
-                    </li>
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+                <span class="pub-authors">R. Ide, <u>T. Ahmed</u>, B. Adhi, S. Kawai, O. Bhilare, and J. Anderson</span><br>
+                <span class="pub-title" itemprop="name">Hardware Sharing for Area Optimization of Floating-Point ALUs</span>,
+                <span class="pub-venue" itemprop="isPartOf">16th International Symposium on Highly-Efficient Accelerators and Reconfigurable Technologies (HEART)</span>, pp. 77&ndash;85, Heidelberg, Germany.
+                <time itemprop="datePublished" datetime="2026-06">June, 2026</time>
+                <span class="pub-award">(Best Paper)</span>
+              </li>
 
                   </ul>
                 </div>
@@ -408,186 +296,63 @@
               <div class="row">
                 <div class="col-md-12">
 
-                  <ul class="fa-ul">
+                  <ul class="fa-ul pub-list">
 
+              <li itemscope itemtype="http://schema.org/CreativeWork">
+                <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+                <span class="pub-authors">N. Nez, O. Khavin, <u>T. Ahmed</u>, J. Hutmann, and S. Dasgupta</span><br>
+                <span class="pub-title" itemprop="name">Neural Network Hardware Accelerator Data Parallelism</span>,
+                <span class="pub-venue" itemprop="identifier">US20230252275A1</span>.
+              </li>
 
-                    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-                      <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+              <li itemscope itemtype="http://schema.org/CreativeWork">
+                <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+                <span class="pub-authors"><u>T. Ahmed</u></span><br>
+                <span class="pub-title" itemprop="name">Optimization Apparatus and Method for Controlling Thereof</span>,
+                <span class="pub-venue" itemprop="identifier">US11481618B2</span>.
+              </li>
 
-                      <span style="font-size:85%" class="pub-authors">
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name"><u>T. Ahmed</u></span>
-                        </span>
-                      </span>
+              <li itemscope itemtype="http://schema.org/CreativeWork">
+                <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+                <span class="pub-authors"><u>T. Ahmed</u></span><br>
+                <span class="pub-title" itemprop="name">Data Compression Method, Data Compression Apparatus, Data Decompression Method, Data Decompression Apparatus and Data Storage System</span>,
+                <span class="pub-venue" itemprop="identifier">US11387844B2</span>.
+              </li>
 
-                      <br>
-                      <span style="font-weight:bold" itemprop="name">The data transfer method of a processor and processor</span>,
-                      <span style="font-style:italic" itemprop="isPartOf">JP Patent App. 2018-211312</span>.
-                      <time datetime = "2018-11-09" itemprop="datePublished">
-                        November, 2018
-                      </time>
-                    </li>
+              <li itemscope itemtype="http://schema.org/CreativeWork">
+                <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+                <span class="pub-authors"><u>T. Ahmed</u></span><br>
+                <span class="pub-title" itemprop="name">Processor with Processing Cores Each Including Arithmetic Unit Array</span>,
+                <span class="pub-venue" itemprop="identifier">US11119765B2</span>.
+              </li>
 
+              <li itemscope itemtype="http://schema.org/CreativeWork">
+                <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+                <span class="pub-authors"><u>T. Ahmed</u></span><br>
+                <span class="pub-title" itemprop="name">Optimization Apparatus and Method for Controlling Thereof</span>,
+                <span class="pub-venue" itemprop="identifier">JP7014963B2</span>.
+              </li>
 
+              <li itemscope itemtype="http://schema.org/CreativeWork">
+                <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+                <span class="pub-authors">R. Zhao, B. Vogel, and <u>T. Ahmed</u></span><br>
+                <span class="pub-title" itemprop="name">Method and Apparatus for Training Neural Network</span>,
+                <span class="pub-venue" itemprop="identifier">US Provisional App. 62/925321</span>.
+              </li>
 
-                    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-                      <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+              <li itemscope itemtype="http://schema.org/CreativeWork">
+                <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+                <span class="pub-authors"><u>T. Ahmed</u> and K. Namura</span><br>
+                <span class="pub-title" itemprop="name">Semiconductor Device and Circuit Layout Method</span>,
+                <span class="pub-venue" itemprop="identifier">JP Patent App. 2020-045750</span>.
+              </li>
 
-                      <span style="font-size:85%" class="pub-authors">
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name"><u>T. Ahmed</u></span>
-                        </span>
-                      </span>
-
-                      <br>
-                      <span style="font-weight:bold" itemprop="name">Processor and control method for processor</span>,
-                      <span style="font-style:italic" itemprop="isPartOf">US Patent App. 17/447,316</span>.
-                      <time datetime = "2021-09-10" itemprop="datePublished">
-                        September, 2021
-                      </time>
-                    </li>
-
-
-
-                    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-                      <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
-
-                      <span style="font-size:85%" class="pub-authors">
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name"><u>T. Ahmed</u></span>
-                        </span>
-                      </span>
-
-                      <br>
-                      <span style="font-weight:bold" itemprop="name">Processor with processing cores each including arithmetic unit array</span>,
-                      <span style="font-style:italic" itemprop="isPartOf">US Patent 16/671,428</span>.
-                      <time datetime = "2021-08-25" itemprop="datePublished">
-                        August, 2021
-                      </time>
-                    </li>
-
-                    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-                      <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
-
-                      <span style="font-size:85%" class="pub-authors">
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name"><u>T. Ahmed</u></span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">K. Namura</span>
-                        </span>
-                      </span>
-
-                      <br>
-                      <span style="font-weight:bold" itemprop="name">Semiconductor device and circuit layout method</span>,
-                      <span style="font-style:italic" itemprop="isPartOf">US Patent App. 17/199,587</span>.
-                      <time datetime = "2021-03-12" itemprop="datePublished">
-                        March, 2021
-                      </time>
-                    </li>
-
-
-                    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-                      <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
-
-                      <span style="font-size:85%" class="pub-authors">
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name"><u>T. Ahmed</u></span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">K. Namura</span>
-                        </span>
-                      </span>
-
-                      <br>
-                      <span style="font-weight:bold" itemprop="name">Semiconductor device, circuit arrangement method, circuit arrangement program and recording medium</span>,
-                      <span style="font-style:italic" itemprop="isPartOf">JP Patent App. 2020-45750</span>.
-                      <time datetime = "2020-03-16" itemprop="datePublished">
-                        March, 2020
-                      </time>
-                    </li>
-
-                    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-                      <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
-
-                      <span style="font-size:85%" class="pub-authors">
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">R. Zhao</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name">B. Vogel</span>
-                        </span>,
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name"><u>T. Ahmed</u></span>
-                        </span>
-                      </span>
-
-                      <br>
-                      <span style="font-weight:bold" itemprop="name">Method and apparatus for training neural network</span>,
-                      <span style="font-style:italic" itemprop="isPartOf">US Patent App. 17/073,517</span>.
-                      <time datetime = "2020-10-19" itemprop="datePublished">
-                        October, 2020
-                      </time>
-                    </li>
-
-                    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-                      <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
-
-                      <span style="font-size:85%" class="pub-authors">
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name"><u>T. Ahmed</u></span>
-                        </span>
-                      </span>
-
-                      <br>
-                      <span style="font-weight:bold" itemprop="name">Data compression method, data compression apparatus, data decompression method, data decompression apparatus and data storage syste</span>,
-                      <span style="font-style:italic" itemprop="isPartOf">US Patent App. 16/838,343</span>.
-                      <time datetime = "2020-04-02" itemprop="datePublished">
-                        April, 2020
-                      </time>
-                    </li>
-
-
-
-
-
-                    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-                      <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
-
-                      <span style="font-size:85%" class="pub-authors">
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name"><u>T. Ahmed</u></span>
-                        </span>
-                      </span>
-
-                      <br>
-                      <span style="font-weight:bold" itemprop="name">Optimization apparatus and method for controlling thereof</span>,
-                      <span style="font-style:italic" itemprop="isPartOf">US Patent App. 16/284,123</span>.
-                      <time datetime = "2019-02-25" itemprop="datePublished">
-                        February, 2019
-                      </time>
-                    </li>
-
-
-                    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-                      <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
-
-                      <span style="font-size:85%" class="pub-authors">
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                          <span itemprop="name"><u>T. Ahmed</u></span>
-                        </span>
-                      </span>
-
-                      <br>
-                      <span style="font-weight:bold" itemprop="name">The control method of the optimization device and optimization apparatus</span>,
-                      <span style="font-style:italic" itemprop="isPartOf">JP Patent 2018-47655</span>.
-                      <time datetime = "2021-12-21" itemprop="datePublished">
-                        December, 2021
-                      </time>
-                    </li>
-
-
-
+              <li itemscope itemtype="http://schema.org/CreativeWork">
+                <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i>
+                <span class="pub-authors"><u>T. Ahmed</u></span><br>
+                <span class="pub-title" itemprop="name">Processor and Control Method for Processor</span>,
+                <span class="pub-venue" itemprop="identifier">JP2020077298A &amp; US20200150958A1</span>.
+              </li>
 
                   </ul>
                 </div>
@@ -631,7 +396,8 @@
       <div class="container">
         <p class="powered-by">
 
-        &copy; 2022 Tanvir Ahmed
+        &copy; <span id="copyright-year">2026</span> Tanvir Ahmed
+        <script>try{var y=new Date(document.lastModified).getFullYear();if(y>2000)document.getElementById("copyright-year").textContent=y;}catch(e){}</script>
 
         <span class="pull-right" aria-hidden="true">
           <a href="#" id="back_to_top">
